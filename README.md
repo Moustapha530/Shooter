@@ -1,2 +1,2 @@
-# Shooter-
+# Shooter
 A pygame game
