@@ -16,9 +16,13 @@ while running:
     screen.blit(game.player.image, game.player.rect)
 
     game.player.all_projectiles.draw(screen)
+    game.all_monsters.draw(screen)
 
     for projectile in game.player.all_projectiles:
         projectile.move()
+
+    for monster in game.all_monsters:
+        monster.forward()
 
     if game.pressed.get(pygame.K_RIGHT):
         game.player.move_right()
