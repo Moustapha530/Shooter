@@ -18,11 +18,14 @@ while running:
     game.player.all_projectiles.draw(screen)
     game.all_monsters.draw(screen)
 
+    game.player.update_health_bar(screen)
+
     for projectile in game.player.all_projectiles:
         projectile.move()
 
     for monster in game.all_monsters:
         monster.forward()
+        monster.update_health_bar(screen)
 
     if game.pressed.get(pygame.K_RIGHT):
         game.player.move_right()
