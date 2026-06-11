@@ -7,7 +7,7 @@ pygame.init()
 game = Game()
 
 pygame.display.set_caption("Shooter")
-screen = pygame.display.set_mode((800, 500))
+screen = pygame.display.set_mode((1000, 600))
 background = pygame.image.load('assets/bg.jpg')
 
 banner = pygame.image.load('assets/banner.png')
